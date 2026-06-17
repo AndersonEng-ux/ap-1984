@@ -1496,6 +1496,8 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
   background: var(--ap-surface-panel); color: var(--ap-text-body);
   padding: 0; max-width: min(560px, calc(100vw - var(--ap-space-8)));
   box-shadow: var(--ap-elevation-3);
+  
+  inset: 0; margin: auto;
 }
 .ap-dialog::backdrop { background: color-mix(in srgb, var(--ap-color-ink) 40%, transparent); }
 
@@ -1867,7 +1869,8 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
   border: var(--ap-border-w2) solid var(--ap-border-strong); padding: 0;
   width: min(560px, calc(100vw - var(--ap-space-8)));
   background: var(--ap-surface-panel); box-shadow: var(--ap-elevation-3);
-  margin-top: 12vh;
+  
+  inset-inline: 0; margin-inline: auto; margin-block-start: 12vh;
 }
 .ap-palette::backdrop { background: color-mix(in srgb, var(--ap-color-ink) 32%, transparent); }
 .ap-palette input {

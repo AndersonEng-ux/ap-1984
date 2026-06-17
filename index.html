@@ -1848,7 +1848,9 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
   border: var(--ap-border-w2) solid var(--ap-border-strong); padding: 0;
   width: min(560px, calc(100vw - var(--ap-space-8)));
   background: var(--ap-surface-panel); box-shadow: var(--ap-elevation-3);
-  margin-top: 12vh;
+  /* base.css resets `* { margin: 0 }`, which kills the UA modal-dialog margin:auto
+     centering — so center the palette explicitly (top-anchored, like a command bar). */
+  inset-inline: 0; margin-inline: auto; margin-block-start: 12vh;
 }
 .ap-palette::backdrop { background: color-mix(in srgb, var(--ap-color-ink) 32%, transparent); }
 .ap-palette input {
@@ -1950,6 +1952,8 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
   background: var(--ap-surface-panel); color: var(--ap-text-body);
   padding: 0; max-width: min(560px, calc(100vw - var(--ap-space-8)));
   box-shadow: var(--ap-elevation-3);
+  /* `* { margin: 0 }` (base.css) kills the UA modal margin:auto — re-center explicitly. */
+  inset: 0; margin: auto;
 }
 .ap-dialog::backdrop { background: color-mix(in srgb, var(--ap-color-ink) 40%, transparent); }
 /* enter: fade + 4px rise (the only legal entry move). Exit: instant — leaving
