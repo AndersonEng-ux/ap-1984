@@ -82,7 +82,7 @@
 
   /* ── color ─────────────────────────────────────────────────── */
   --ap-color-ink: #111111; /* Type ink, always. Warmth lives in paper/stones/red/photography — never in type. */
-  --ap-color-graphite-neutral: #565656; /* NEUTRAL graphite #565656 — same lightness as warm graphite (L*≈37), zero hue. App + print data-ink, so charts  */
+  --ap-color-graphite-neutral: #565656; /* NEUTRAL graphite #565656 — same lightness as graphite (L*≈37), zero hue. App + print data-ink, so charts stay  */
   --ap-color-paper: #FFFFFF; /* White. App/print ground; the --ap-surface-lift 'drive home a point' exception on editorial. */
   --ap-color-warm-white: #FCFCFA; /* THE editorial ground (2026-06-15 rev2). Midpoint of paper (#FFFFFF) and cream (#F8F8F6). Ground AND cards shar */
   --ap-color-cream-print: #F9F7F2; /* Print stock simulation — proposal/doc screen preview only; pages print white. */
@@ -107,9 +107,9 @@
   --ap-color-night-1: #232120; /* DARK panel/card — one step up (separation by STEP, not shadow). */
   --ap-color-night-2: #2C2A28; /* DARK elevated — surface.lift + hover/active tint. */
   --ap-color-night-deep: #0F0E0D; /* DARK deepest block — surface.inverse (KPI ink / ⌘K). */
-  --ap-color-dark-text: #F4F1EC; /* DARK-mode primary text — warm off-white #F4F1EC, 15.6:1 on dark-bg-0. Renamed from the mislabeled ink-light (r */
-  --ap-color-dark-text-2: #ABA59B; /* DARK-mode secondary text #ABA59B, 7.2:1 on dark-bg. Renamed from stone-light. Dark namespace. */
-  --ap-color-decor-grey-dark: #6E6A63; /* DARK decorative/large-only grey — never small/body text. */
+  --ap-color-dark-text: #F4F1EC; /* DARK-mode primary text — warm off-white #F4F1EC, 15.6:1 on dark-bg-0. Renamed from the mislabeled dark-text (r */
+  --ap-color-dark-text-2: #ABA59B; /* DARK-mode secondary text #ABA59B, 7.2:1 on dark-bg. Renamed from dark-text-2. Dark namespace. */
+  --ap-color-steel-dark: #6E6A63; /* DARK decorative/large-only grey — never small/body text. */
   --ap-color-control-edge-dark: #787268; /* DARK input border + strong rule — 3.36:1 on night-1 (WCAG 1.4.11). */
   --ap-color-border-medium-dark: #403C37; /* DARK medium hairline / chart gridline. */
   --ap-color-border-soft-dark: #322F2C; /* DARK soft hairline. */
@@ -140,14 +140,14 @@
   --ap-text-long: var(--ap-color-ink);
   --ap-text-muted: var(--ap-color-graphite-neutral); /* Muted body/label text on light surfaces. Clearly-named alias of the neutral grey text rung (graphite-neutral)  */
   --ap-text-secondary: var(--ap-color-graphite-neutral);
-  --ap-text-muted-large: var(--ap-color-control-edge); /* DECORATIVE / large display flourishes ONLY — decor-grey ~3.1:1 clears large-text 3:1, but NEVER small/UI/body  */
+  --ap-text-muted-large: var(--ap-color-control-edge); /* DECORATIVE / large display flourishes ONLY — steel ~3.1:1 clears large-text 3:1, but NEVER small/UI/body text  */
   --ap-text-inverse: #FFFFFF;
   --ap-text-inverse-muted: #C9D2DA; /* Mono meta on navy/ink shelves. */
   --ap-text-accent: var(--ap-color-red); /* The ONLY chromatic accent in content. Red text on cream is for KEY PHRASES + data emphasis, links pair w/ unde */
   --ap-border-strong: var(--ap-color-ink);
   --ap-border-medium: var(--ap-color-control-edge);
   --ap-border-soft: var(--ap-color-line-pale);
-  --ap-border-control: var(--ap-color-control-edge); /* WCAG 1.4.11 — control-edge (was stone-3 2.74:1). Claude Design v1.0.0. */
+  --ap-border-control: var(--ap-color-control-edge); /* WCAG 1.4.11 — control-edge (was control-edge 2.74:1). Claude Design v1.0.0. */
   --ap-border-navy: var(--ap-color-navy); /* Structural rules only (masthead/footer). Dial-gated. */
   --ap-accent-bg: var(--ap-color-red);
   --ap-accent-bg-hover: var(--ap-color-red-deep);
@@ -160,7 +160,7 @@
   --ap-focus-ring: var(--ap-color-red);
   --ap-focus-width: 2px;
   --ap-focus-offset: 2px;
-  --ap-chart-ink: var(--ap-color-graphite-neutral); /* DEFAULT chart color — outline bars, trend lines. One-marker rule. Editorial = warm graphite; app/print = neutr */
+  --ap-chart-ink: var(--ap-color-graphite-neutral); /* DEFAULT chart color — outline bars, trend lines. One-marker rule. Editorial = graphite; app/print = neutral gr */
   --ap-chart-axis: var(--ap-color-ink);
   --ap-chart-gridline: var(--ap-color-line-pale);
   --ap-chart-label: var(--ap-color-graphite-neutral);
@@ -415,7 +415,7 @@
   --ap-text-body: var(--ap-color-dark-text);
   --ap-text-long: var(--ap-color-dark-text);
   --ap-text-secondary: var(--ap-color-dark-text-2);
-  --ap-text-muted-large: var(--ap-color-decor-grey-dark);
+  --ap-text-muted-large: var(--ap-color-steel-dark);
   --ap-text-accent: var(--ap-color-red-light);
   --ap-border-strong: var(--ap-color-control-edge-dark);
   --ap-border-medium: var(--ap-color-border-medium-dark);
