@@ -61,12 +61,12 @@
 
   
   --ap-color-ink: #111111; 
-  --ap-color-graphite-neutral: #565656; 
+  --ap-color-graphite: #565656; 
   --ap-color-paper: #FFFFFF; 
   --ap-color-warm-white: #FCFCFA; 
   --ap-color-cream-print: #F9F7F2; 
   --ap-color-paper-tint: #F7F6F3; 
-  --ap-color-line-pale: #DCDCDC; 
+  --ap-color-line: #DCDCDC; 
   --ap-color-red: #B32A2E; 
   --ap-color-red-deep: #8F2225; 
   --ap-color-red-soft: rgba(179,42,46,0.08);
@@ -81,15 +81,14 @@
   --ap-color-data-sun: #C9A23A; 
   --ap-color-data-coral: #C25C57; 
   --ap-color-data-plum: #8C5680; 
-  --ap-color-control-edge: #8D8D8D; 
+  --ap-color-steel: #8D8D8D; 
   --ap-color-night-0: #1A1917; 
   --ap-color-night-1: #232120; 
   --ap-color-night-2: #2C2A28; 
   --ap-color-night-deep: #0F0E0D; 
   --ap-color-dark-text: #F4F1EC; 
   --ap-color-dark-text-2: #ABA59B; 
-  --ap-color-steel-dark: #6E6A63; 
-  --ap-color-control-edge-dark: #787268; 
+  --ap-color-steel-dark: #787268; 
   --ap-color-border-medium-dark: #403C37; 
   --ap-color-border-soft-dark: #322F2C; 
   --ap-color-red-light: #E2685F; 
@@ -117,16 +116,16 @@
   --ap-text-primary: var(--ap-color-ink);
   --ap-text-body: var(--ap-color-ink);
   --ap-text-long: var(--ap-color-ink);
-  --ap-text-muted: var(--ap-color-graphite-neutral); 
-  --ap-text-secondary: var(--ap-color-graphite-neutral);
-  --ap-text-muted-large: var(--ap-color-control-edge); 
+  --ap-text-muted: var(--ap-color-graphite); 
+  --ap-text-secondary: var(--ap-color-graphite);
+  --ap-text-muted-large: var(--ap-color-steel); 
   --ap-text-inverse: #FFFFFF;
   --ap-text-inverse-muted: #C9D2DA; 
   --ap-text-accent: var(--ap-color-red); 
   --ap-border-strong: var(--ap-color-ink);
-  --ap-border-medium: var(--ap-color-control-edge);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-border-control: var(--ap-color-control-edge); 
+  --ap-border-medium: var(--ap-color-steel);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-border-control: var(--ap-color-steel); 
   --ap-border-navy: var(--ap-color-navy); 
   --ap-accent-bg: var(--ap-color-red);
   --ap-accent-bg-hover: var(--ap-color-red-deep);
@@ -139,10 +138,10 @@
   --ap-focus-ring: var(--ap-color-red);
   --ap-focus-width: 2px;
   --ap-focus-offset: 2px;
-  --ap-chart-ink: var(--ap-color-graphite-neutral); 
+  --ap-chart-ink: var(--ap-color-graphite); 
   --ap-chart-axis: var(--ap-color-ink);
-  --ap-chart-gridline: var(--ap-color-line-pale);
-  --ap-chart-label: var(--ap-color-graphite-neutral);
+  --ap-chart-gridline: var(--ap-color-line);
+  --ap-chart-label: var(--ap-color-graphite);
   --ap-chart-marker: var(--ap-color-red); 
   --ap-chart-reference: var(--ap-color-navy); 
   --ap-chart-cat-1: var(--ap-color-data-blue);
@@ -340,10 +339,10 @@
 [data-register="app"] {
   --ap-surface-page: var(--ap-color-paper);
   --ap-surface-panel: var(--ap-color-paper);
-  --ap-border-medium: var(--ap-color-line-pale);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-border-control: var(--ap-color-control-edge);
-  --ap-chart-ink: var(--ap-color-graphite-neutral);
+  --ap-border-medium: var(--ap-color-line);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-border-control: var(--ap-color-steel);
+  --ap-chart-ink: var(--ap-color-graphite);
   --ap-h2: 24px;
   --ap-h3: 20px;
   --ap-type-body: 15px;
@@ -352,9 +351,9 @@
 [data-register="print"] {
   --ap-surface-page: var(--ap-color-paper);
   --ap-surface-panel: var(--ap-color-paper);
-  --ap-border-medium: var(--ap-color-line-pale);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-chart-ink: var(--ap-color-graphite-neutral);
+  --ap-border-medium: var(--ap-color-line);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-chart-ink: var(--ap-color-graphite);
   --ap-type-floor: 10px;
 }
 
@@ -393,10 +392,10 @@
   --ap-text-secondary: var(--ap-color-dark-text-2);
   --ap-text-muted-large: var(--ap-color-steel-dark);
   --ap-text-accent: var(--ap-color-red-light);
-  --ap-border-strong: var(--ap-color-control-edge-dark);
+  --ap-border-strong: var(--ap-color-steel-dark);
   --ap-border-medium: var(--ap-color-border-medium-dark);
   --ap-border-soft: var(--ap-color-border-soft-dark);
-  --ap-border-control: var(--ap-color-control-edge-dark);
+  --ap-border-control: var(--ap-color-steel-dark);
   --ap-border-navy: var(--ap-color-border-medium-dark);
   --ap-accent-soft: rgba(226,104,95,0.12);
   --ap-status-success: var(--ap-color-success-light);
@@ -416,7 +415,7 @@
   --ap-chart-cat-4: var(--ap-color-data-sun-dark);
   --ap-chart-cat-5: var(--ap-color-data-coral-dark);
   --ap-chart-cat-6: var(--ap-color-data-plum-dark);
-  --ap-tier-chrome-rule: var(--ap-color-control-edge-dark);
+  --ap-tier-chrome-rule: var(--ap-color-steel-dark);
   --ap-tier-shelf-bg: var(--ap-color-night-1);
   --ap-tier-shelf-fg: var(--ap-color-dark-text-2);
   --ap-tier-band-bg: var(--ap-color-night-1);
@@ -1002,8 +1001,8 @@ html:has(.ap-nav-sheet[open]) { overflow: hidden; }
 
 .ap-figbox {
   position: relative; overflow: hidden;
-  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ap-color-graphite-neutral) 5%, transparent) 0 1px, transparent 1px 14px),
-              color-mix(in srgb, var(--ap-color-graphite-neutral) 22%, transparent);
+  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ap-color-graphite) 5%, transparent) 0 1px, transparent 1px 14px),
+              color-mix(in srgb, var(--ap-color-graphite) 22%, transparent);
   border: var(--ap-border-w1) solid var(--ap-border-medium);
 }
 .ap-figbox img { width: 100%; height: 100%; object-fit: cover; filter: var(--ap-image-treatment); }
@@ -1139,7 +1138,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-mapbox { border: var(--ap-border-w1) solid var(--ap-border-strong); background: var(--ap-surface-panel); }
 .ap-mapbox__frame { position: relative; aspect-ratio: 16 / 9; background: var(--ap-surface-page); overflow: hidden; }
 .ap-mapbox__frame iframe { width: 100%; height: 100%; border: 0; display: block; filter: var(--ap-image-treatment); }
-.ap-mapbox__placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line-pale) 7px, var(--ap-color-line-pale) 8px); }
+.ap-mapbox__placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line) 7px, var(--ap-color-line) 8px); }
 .ap-mapbox__tag { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); text-transform: uppercase; }
 .ap-mapbox__bar { display: flex; align-items: center; gap: var(--ap-space-3); padding: var(--ap-space-3) var(--ap-space-4); border-top: var(--ap-border-w1) solid var(--ap-border-strong); }
 .ap-mapbox__addr { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); letter-spacing: var(--ap-tracking-data); color: var(--ap-text-primary); }
@@ -1179,7 +1178,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-project-index__chip[aria-pressed="true"] { border-color: var(--ap-border-strong); color: var(--ap-text-primary); }
 
 .ap-locmap { border: var(--ap-border-w1) solid var(--ap-border-strong); background: var(--ap-surface-panel); }
-.ap-locmap__frame { position: relative; aspect-ratio: 4 / 3; background: var(--ap-surface-page); overflow: hidden; background-image: repeating-linear-gradient(0deg, transparent, transparent 31px, var(--ap-color-line-pale) 31px, var(--ap-color-line-pale) 32px), repeating-linear-gradient(90deg, transparent, transparent 31px, var(--ap-color-line-pale) 31px, var(--ap-color-line-pale) 32px); }
+.ap-locmap__frame { position: relative; aspect-ratio: 4 / 3; background: var(--ap-surface-page); overflow: hidden; background-image: repeating-linear-gradient(0deg, transparent, transparent 31px, var(--ap-color-line) 31px, var(--ap-color-line) 32px), repeating-linear-gradient(90deg, transparent, transparent 31px, var(--ap-color-line) 31px, var(--ap-color-line) 32px); }
 .ap-locmap__pin { position: absolute; transform: translate(-50%, -100%); color: var(--ap-color-ink); }
 .ap-locmap__pin--accent { color: var(--ap-accent-bg); }
 .ap-locmap__pin b { position: absolute; left: 50%; top: -15px; transform: translateX(-50%); font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); color: var(--ap-text-primary); }
@@ -1212,7 +1211,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-pdf__name { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); color: var(--ap-text-primary); }
 .ap-pdf__bar .ap-lk { margin-inline-start: auto; flex: none; }
 .ap-pdf__frame { width: 100%; height: var(--pdf-height, 420px); border: 0; display: block; background: var(--ap-surface-page); }
-.ap-pdf__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); height: var(--pdf-height, 420px); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line-pale) 7px, var(--ap-color-line-pale) 8px); }
+.ap-pdf__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); height: var(--pdf-height, 420px); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line) 7px, var(--ap-color-line) 8px); }
 .ap-pdf__tag { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); text-transform: uppercase; }
 
 .ap-datefield { position: relative; display: inline-block; }
@@ -1230,7 +1229,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-cal__dow { font-family: var(--ap-font-mono); font-size: 10px; letter-spacing: var(--ap-tracking-data); text-transform: uppercase; color: var(--ap-text-secondary); text-align: center; padding: 4px 0; }
 .ap-cal__day { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: none; border: 0; cursor: pointer; color: var(--ap-text-primary); }
 .ap-cal__day:hover { background: var(--ap-surface-tint); }
-.ap-cal__day--muted { color: var(--ap-color-control-edge); }
+.ap-cal__day--muted { color: var(--ap-color-steel); }
 .ap-cal__day--today { box-shadow: inset 0 0 0 var(--ap-border-w1) var(--ap-border-strong); }
 .ap-cal__day--selected { background: var(--ap-color-ink); color: var(--ap-text-inverse); }
 .ap-cal__day--selected:hover { background: var(--ap-color-ink); }
@@ -1839,7 +1838,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
 .ap-progress__row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--ap-space-1); }
 .ap-progress__label { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-caps); text-transform: uppercase; color: var(--ap-text-secondary); }
 .ap-progress__val { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); color: var(--ap-text-primary); font-variant-numeric: tabular-nums; }
-.ap-progress__track { height: var(--ap-space-2); background: var(--ap-color-line-pale); }
+.ap-progress__track { height: var(--ap-space-2); background: var(--ap-color-line); }
 .ap-progress__bar { height: 100%; background: var(--ap-color-ink); transition: width var(--ap-motion-base) var(--ap-motion-ease-out); }
 
 .ap-steps { display: flex; list-style: none; margin: 0; padding: 0; gap: var(--ap-space-2); flex-wrap: wrap; }
@@ -2199,7 +2198,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
 <p><b>05 · Charts are ink-first.</b><br>Graphite outlines, ONE red marker (the figure that matters), a navy dashed reference line. Never a rainbow.<br><i>Why:</i> color in a chart must carry meaning. A rainbow says everything matters, therefore nothing does. Ink draws; one red marker points; the eye goes straight to the figure that matters.<br><i>Enforced by:</i> review (the one-marker rule).</p>
 <p><b>06 · Three registers retune one canon.</b><br>Editorial (warm-white <code>#FCFCFA</code>, 16px) · app (white workbench, 15px, motion ≈ 0) · print (816×1056, 10px floor, prints white).<br><i>Why:</i> a website, a workbench app, and a printed proposal have different jobs and different physics. One canon retuned by register keeps them one brand without pretending they are one medium.<br><i>Enforced by:</i> the semantic layer (<code>data-register</code>).</p>
 <p>The six, with the actual tokens they govern — live from the canon:</p>
-<div class="ds-laws"><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">01</span><span class="ds-law__t">Radius is always 0</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="8" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__sq"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>--ap-radius</b> 0</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">02</span><span class="ds-law__t">NHG Medium 500 · tracking 0</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><text x="18" y="26" text-anchor="middle" font-family="var(--ap-font-display)" font-weight="500" font-size="22" fill="currentColor">Aa</text></svg></span></div><div class="ds-law__demo"><div class="ds-law__type"><span style="font-family:var(--ap-font-display);font-weight:500;font-size:30px;line-height:1">Aa</span><span style="font-family:var(--ap-font-text);font-weight:400;font-size:15px">Reads like the document.</span><span style="font-family:var(--ap-font-mono);font-size:13px">Q-2607 · $3,800</span></div></div><div class="ds-law__toks"><span class="ds-tok"><b>display</b> 500</span><span class="ds-tok"><b>text</b> 400</span><span class="ds-tok"><b>mono</b> data</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">03</span><span class="ds-law__t">Monochrome-plus-one</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="6" y="11" width="13" height="13" fill="currentColor"/><rect x="21" y="11" width="13" height="13" fill="var(--ap-text-accent)"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-ink)"></span><span class="ds-law__c" style="background:var(--ap-color-red)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>ink</b> #111111</span><span class="ds-tok"><b>red</b> #B32A2E</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">04</span><span class="ds-law__t">Navy is structure</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="9" width="22" height="6" fill="var(--ap-chart-reference)"/><rect x="7" y="21" width="22" height="6" fill="var(--ap-chart-reference)"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-navy)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>navy</b> #0C3350</span><span class="ds-tok"><b>rule</b> structure only</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">05</span><span class="ds-law__t">Charts ink-first — one marker</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="20" width="4" height="9" fill="currentColor"/><rect x="14" y="14" width="4" height="15" fill="currentColor"/><rect x="21" y="9" width="4" height="20" fill="var(--ap-text-accent)"/><rect x="28" y="17" width="4" height="12" fill="currentColor"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-graphite-neutral)"></span><span class="ds-law__c" style="background:var(--ap-color-red)"></span><span class="ds-law__c" style="background:var(--ap-color-navy)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>ink</b> #565656</span><span class="ds-tok"><b>marker</b> #B32A2E</span><span class="ds-tok"><b>ref</b> #0C3350</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">06</span><span class="ds-law__t">Three registers, one canon</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="5" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="15" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="25" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-warm-white)"></span><span class="ds-law__c" style="background:var(--ap-color-paper)"></span><span class="ds-law__c" style="background:var(--ap-color-cream-print)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>editorial</b> #FCFCFA</span><span class="ds-tok"><b>app</b> #FFFFFF</span><span class="ds-tok"><b>print</b> #F9F7F2</span></div></div></div>
+<div class="ds-laws"><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">01</span><span class="ds-law__t">Radius is always 0</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="8" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__sq"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>--ap-radius</b> 0</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">02</span><span class="ds-law__t">NHG Medium 500 · tracking 0</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><text x="18" y="26" text-anchor="middle" font-family="var(--ap-font-display)" font-weight="500" font-size="22" fill="currentColor">Aa</text></svg></span></div><div class="ds-law__demo"><div class="ds-law__type"><span style="font-family:var(--ap-font-display);font-weight:500;font-size:30px;line-height:1">Aa</span><span style="font-family:var(--ap-font-text);font-weight:400;font-size:15px">Reads like the document.</span><span style="font-family:var(--ap-font-mono);font-size:13px">Q-2607 · $3,800</span></div></div><div class="ds-law__toks"><span class="ds-tok"><b>display</b> 500</span><span class="ds-tok"><b>text</b> 400</span><span class="ds-tok"><b>mono</b> data</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">03</span><span class="ds-law__t">Monochrome-plus-one</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="6" y="11" width="13" height="13" fill="currentColor"/><rect x="21" y="11" width="13" height="13" fill="var(--ap-text-accent)"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-ink)"></span><span class="ds-law__c" style="background:var(--ap-color-red)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>ink</b> #111111</span><span class="ds-tok"><b>red</b> #B32A2E</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">04</span><span class="ds-law__t">Navy is structure</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="9" width="22" height="6" fill="var(--ap-chart-reference)"/><rect x="7" y="21" width="22" height="6" fill="var(--ap-chart-reference)"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-navy)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>navy</b> #0C3350</span><span class="ds-tok"><b>rule</b> structure only</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">05</span><span class="ds-law__t">Charts ink-first — one marker</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="20" width="4" height="9" fill="currentColor"/><rect x="14" y="14" width="4" height="15" fill="currentColor"/><rect x="21" y="9" width="4" height="20" fill="var(--ap-text-accent)"/><rect x="28" y="17" width="4" height="12" fill="currentColor"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-graphite)"></span><span class="ds-law__c" style="background:var(--ap-color-red)"></span><span class="ds-law__c" style="background:var(--ap-color-navy)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>ink</b> #565656</span><span class="ds-tok"><b>marker</b> #B32A2E</span><span class="ds-tok"><b>ref</b> #0C3350</span></div></div><div class="ds-law"><div class="ds-law__h"><span class="ds-law__n">06</span><span class="ds-law__t">Three registers, one canon</span><span class="ds-law__glyph"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="5" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="15" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="25" y="13" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></div><div class="ds-law__demo"><span class="ds-law__c" style="background:var(--ap-color-warm-white)"></span><span class="ds-law__c" style="background:var(--ap-color-paper)"></span><span class="ds-law__c" style="background:var(--ap-color-cream-print)"></span></div><div class="ds-law__toks"><span class="ds-tok"><b>editorial</b> #FCFCFA</span><span class="ds-tok"><b>app</b> #FFFFFF</span><span class="ds-tok"><b>print</b> #F9F7F2</span></div></div></div>
 <h3 id="2-2-the-judgment-rules">2.2 The judgment rules</h3>
 <p>These can't be linted — they are review-enforced. They matter as much as the six.</p>
 <ul><li><b>One red action per screen.</b> A primary button exists only where its action belongs to the page; at most one ghost (Back); red links underlined.</li><li><b>Mono = data only.</b> Fees, dates, IDs, licenses, coordinates. Mono never sets a sentence; letterspaced caps for single-line labels only.</li><li><b>Charts ink-first, one marker.</b> The categorical palette only when hue IS the data — one per real category.</li><li><b>Imagery real or absent.</b> Stock never stands in for a named person or place; the fallback is an ink schematic marked NOT TO SCALE.</li><li><b>States are mandatory.</b> Every listable view ships empty, loading, and error states; state changes get a toast and an undo; errors are text, never color alone.</li></ul>
@@ -2212,7 +2211,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
 <h2 id="iii-color">III — Color</h2>
 <h3 id="3-1-philosophy">3.1 Philosophy</h3>
 <p>Warmth lives in the ground, the permit red, and photography — <b>never in type</b>. Ink is <code>#111111</code>, always. The grey ramp is neutral (the neutrals were neutralized from taupe to luminance-matched greys). Navy is structure only. The six data hues are categorical-chart-only. Reach for the <b>semantic</b> layer, never raw color: components touch <code>var(--ap-text-primary)</code>, never <code>--ap-color-ink</code> directly.</p>
-<div class="ds-subh">Ink &amp; paper</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-ink)"></div><div class="ds-sw__m"><b>ink</b>#111111</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-graphite-neutral)"></div><div class="ds-sw__m"><b>graphite-neutral</b>#565656</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-paper)"></div><div class="ds-sw__m"><b>paper</b>#FFFFFF</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-warm-white)"></div><div class="ds-sw__m"><b>warm-white</b>#FCFCFA</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-cream-print)"></div><div class="ds-sw__m"><b>cream-print</b>#F9F7F2</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-cream-print)"></div><div class="ds-sw__m"><b>cream-print</b>#F9F7F2</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-paper-tint)"></div><div class="ds-sw__m"><b>paper-tint</b>#F7F6F3</div></div></div><div class="ds-subh">The one red &amp; structural navy</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red)"></div><div class="ds-sw__m"><b>red</b>#B32A2E</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red-deep)"></div><div class="ds-sw__m"><b>red-deep</b>#8F2225</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red-soft)"></div><div class="ds-sw__m"><b>red-soft</b>rgba(179,42,46,0.08)</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-navy)"></div><div class="ds-sw__m"><b>navy</b>#0C3350</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-navy-2)"></div><div class="ds-sw__m"><b>navy-2</b>#16466B</div></div></div><div class="ds-subh">Neutral grey ramp</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-graphite-neutral)"></div><div class="ds-sw__m"><b>graphite-neutral</b>#565656</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-control-edge)"></div><div class="ds-sw__m"><b>control-edge</b>#8D8D8D</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-control-edge)"></div><div class="ds-sw__m"><b>control-edge</b>#8D8D8D</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-line-pale)"></div><div class="ds-sw__m"><b>line-pale</b>#DCDCDC</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-line-pale)"></div><div class="ds-sw__m"><b>line-pale</b>#DCDCDC</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-control-edge)"></div><div class="ds-sw__m"><b>control-edge</b>#8D8D8D</div></div></div><div class="ds-subh">Status (app register)</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-success)"></div><div class="ds-sw__m"><b>success</b>#1F6B3C</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-warning)"></div><div class="ds-sw__m"><b>warning</b>#8A6200</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-info)"></div><div class="ds-sw__m"><b>info</b>#2F6396</div></div></div><div class="ds-subh">Data-viz categorical six — charts only</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-blue)"></div><div class="ds-sw__m"><b>data-blue</b>#2C6E9E</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-teal)"></div><div class="ds-sw__m"><b>data-teal</b>#3E8C84</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-green)"></div><div class="ds-sw__m"><b>data-green</b>#7FA653</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-sun)"></div><div class="ds-sw__m"><b>data-sun</b>#C9A23A</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-coral)"></div><div class="ds-sw__m"><b>data-coral</b>#C25C57</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-plum)"></div><div class="ds-sw__m"><b>data-plum</b>#8C5680</div></div></div>
+<div class="ds-subh">Ink &amp; paper</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-ink)"></div><div class="ds-sw__m"><b>ink</b>#111111</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-graphite)"></div><div class="ds-sw__m"><b>graphite</b>#565656</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-paper)"></div><div class="ds-sw__m"><b>paper</b>#FFFFFF</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-warm-white)"></div><div class="ds-sw__m"><b>warm-white</b>#FCFCFA</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-cream-print)"></div><div class="ds-sw__m"><b>cream-print</b>#F9F7F2</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-cream-print)"></div><div class="ds-sw__m"><b>cream-print</b>#F9F7F2</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-paper-tint)"></div><div class="ds-sw__m"><b>paper-tint</b>#F7F6F3</div></div></div><div class="ds-subh">The one red &amp; structural navy</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red)"></div><div class="ds-sw__m"><b>red</b>#B32A2E</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red-deep)"></div><div class="ds-sw__m"><b>red-deep</b>#8F2225</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-red-soft)"></div><div class="ds-sw__m"><b>red-soft</b>rgba(179,42,46,0.08)</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-navy)"></div><div class="ds-sw__m"><b>navy</b>#0C3350</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-navy-2)"></div><div class="ds-sw__m"><b>navy-2</b>#16466B</div></div></div><div class="ds-subh">Neutral grey ramp</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-graphite)"></div><div class="ds-sw__m"><b>graphite</b>#565656</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-steel)"></div><div class="ds-sw__m"><b>steel</b>#8D8D8D</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-steel)"></div><div class="ds-sw__m"><b>steel</b>#8D8D8D</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-line)"></div><div class="ds-sw__m"><b>line</b>#DCDCDC</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-line)"></div><div class="ds-sw__m"><b>line</b>#DCDCDC</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-steel)"></div><div class="ds-sw__m"><b>steel</b>#8D8D8D</div></div></div><div class="ds-subh">Status (app register)</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-success)"></div><div class="ds-sw__m"><b>success</b>#1F6B3C</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-warning)"></div><div class="ds-sw__m"><b>warning</b>#8A6200</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-info)"></div><div class="ds-sw__m"><b>info</b>#2F6396</div></div></div><div class="ds-subh">Data-viz categorical six — charts only</div><div class="ds-sw-grid"><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-blue)"></div><div class="ds-sw__m"><b>data-blue</b>#2C6E9E</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-teal)"></div><div class="ds-sw__m"><b>data-teal</b>#3E8C84</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-green)"></div><div class="ds-sw__m"><b>data-green</b>#7FA653</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-sun)"></div><div class="ds-sw__m"><b>data-sun</b>#C9A23A</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-coral)"></div><div class="ds-sw__m"><b>data-coral</b>#C25C57</div></div><div class="ds-sw"><div class="ds-chip" style="background:var(--ap-color-data-plum)"></div><div class="ds-sw__m"><b>data-plum</b>#8C5680</div></div></div>
 <h3 id="3-2-ink-paper">3.2 Ink &amp; paper</h3>
 <div class="md-tw"><table><thead><tr><th>Token</th><th>Value</th><th>Role</th><th>Why this choice</th></tr></thead><tbody><tr><td>ink</td><td><code>#111111</code></td><td>Type, always</td><td>Pure black <code>#000</code> vibrates on warm-white and reads digital/cheap. <code>#111</code> holds authority without the buzz. Type stays neutral so warmth can live in ground, red, and photography.</td></tr><tr><td>graphite</td><td><code>#5A564E</code></td><td>Data-viz drawing ink — outline bars, trend lines</td><td>A pencil-on-vellum read. Warm in the editorial register (on warm-white); swaps to neutral in app/print. The default chart ink — color is spent only on the one marker.</td></tr><tr><td>paper</td><td><code>#FFFFFF</code></td><td>App/print ground; the one editorial "lift" exception</td><td>Clinical as a page ground, which is why editorial moved off it — but pure white lifting off warm-white is how a single emphasis element drives a point home.</td></tr><tr><td>warm-white</td><td><code>#FCFCFA</code></td><td>THE editorial ground</td><td>The midpoint of paper and cream. Evokes warm stock — the printed document the buyer trusts — without going clinical. Ground and cards share it; pure white lifts off it for one emphasis element.</td></tr><tr><td>cream</td><td><code>#F8F8F6</code></td><td>Warm-stock lineage</td><td>Was the editorial ground; retained as a token for print-stock lineage after the ground moved to warm-white.</td></tr><tr><td>cream-print</td><td><code>#F9F7F2</code></td><td>Print stock simulation</td><td>Screen preview of proposal/doc stock only. Pages print white; tone comes from the paper.</td></tr><tr><td>paper-tint</td><td><code>#F7F6F3</code></td><td>App hover / active-nav tint</td><td>The quietest possible state change — tint, never lift, in the workbench.</td></tr></tbody></table></div>
 <h3 id="3-3-the-one-red-structural-navy">3.3 The one red &amp; structural navy</h3>
@@ -2286,7 +2285,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
 <p><b>Which chart for which data:</b></p>
 <div class="md-tw"><table><thead><tr><th>Data shape</th><th>Chart</th><th>The rule</th></tr></thead><tbody><tr><td>Compare across categories</td><td>Horizontal bar</td><td>Ink outlines; ONE marker. Sort by value unless order is meaningful.</td></tr><tr><td>Change over time</td><td>Line</td><td>Marker red solid; target navy dashed; history graphite. Max 3 series, then small-multiples.</td></tr><tr><td>Composition of a whole</td><td>Stacked bar (donut ≤ 5)</td><td>Grade slices in greys, mark THE one in red. Never pie-with-rainbow, never 3D.</td></tr><tr><td>One number + direction</td><td>KPI + sparkline</td><td>Number in ink display; trend graphite; red only on the live point/delta.</td></tr></tbody></table></div>
 <p>The grammar, live — ink draws, one red marker, a navy dashed reference:</p>
-<figure class="ds-fig"><div class="ds-fig__art"><div class="ds-chart"><div class="ds-bar"><span class="ds-bar__l">Survey</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:62%;background:var(--ap-chart-ink, var(--ap-color-graphite-neutral))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Civil / site</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:88%;background:var(--ap-text-accent)"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Environmental</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:47%;background:var(--ap-chart-ink, var(--ap-color-graphite-neutral))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Geotechnical</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:38%;background:var(--ap-chart-ink, var(--ap-color-graphite-neutral))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Construction admin</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:26%;background:var(--ap-chart-ink, var(--ap-color-graphite-neutral))"></span></span></div></div></div><figcaption>Compare across categories — horizontal bars, ink outlines, ONE red marker on the figure that matters (the work pursued). Sorted by value.</figcaption></figure><figure class="ds-fig"><div class="ds-fig__art"><svg viewBox="0 0 600 220" role="img" aria-label="Turnaround time trending down toward a navy dashed target, with a red live point.">
+<figure class="ds-fig"><div class="ds-fig__art"><div class="ds-chart"><div class="ds-bar"><span class="ds-bar__l">Survey</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:62%;background:var(--ap-chart-ink, var(--ap-color-graphite))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Civil / site</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:88%;background:var(--ap-text-accent)"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Environmental</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:47%;background:var(--ap-chart-ink, var(--ap-color-graphite))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Geotechnical</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:38%;background:var(--ap-chart-ink, var(--ap-color-graphite))"></span></span></div><div class="ds-bar"><span class="ds-bar__l">Construction admin</span><span class="ds-bar__t"><span class="ds-bar__f" style="inline-size:26%;background:var(--ap-chart-ink, var(--ap-color-graphite))"></span></span></div></div></div><figcaption>Compare across categories — horizontal bars, ink outlines, ONE red marker on the figure that matters (the work pursued). Sorted by value.</figcaption></figure><figure class="ds-fig"><div class="ds-fig__art"><svg viewBox="0 0 600 220" role="img" aria-label="Turnaround time trending down toward a navy dashed target, with a red live point.">
     <line x1="56" y1="20" x2="56" y2="180" stroke="currentColor" stroke-width="1.5"/>
     <line x1="56" y1="180" x2="576" y2="180" stroke="currentColor" stroke-width="1.5"/>
     <line x1="56" y1="92" x2="576" y2="92" stroke="var(--ap-chart-reference)" stroke-width="1.5" stroke-dasharray="6 4"/>
@@ -2296,7 +2295,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
     <text x="552" y="128" text-anchor="end" class="red">6.2h</text>
     <text x="56" y="200" class="sec">Mar</text><text x="576" y="200" text-anchor="end" class="sec">now</text>
   </svg></div><figcaption>Change over time — ink trend, a navy dashed target, the red marker only on the live point. Max three series, then small-multiples.</figcaption></figure><figure class="ds-fig"><div class="ds-fig__art"><div class="ds-spark"><div class="ds-spark__num">6.2h</div><svg viewBox="0 0 160 44" role="img" aria-label="Sparkline trending down with a red endpoint.">
-    <polyline points="4,34 28,30 52,32 76,22 100,24 124,16 152,12" fill="none" stroke="var(--ap-chart-ink, var(--ap-color-graphite-neutral))" stroke-width="2"/>
+    <polyline points="4,34 28,30 52,32 76,22 100,24 124,16 152,12" fill="none" stroke="var(--ap-chart-ink, var(--ap-color-graphite))" stroke-width="2"/>
     <circle cx="152" cy="12" r="4" fill="var(--ap-text-accent)"/>
   </svg><div class="ds-spark__sub">Median turnaround · ↓ from 9.1h</div></div></div><figcaption>One number + direction — number in ink display, trend in graphite, red only on the live delta.</figcaption></figure>
 <p>The categorical six (§3.6) come out only when <b>hue IS the data</b> — maps, true multi-series — one per real category, never all six because they exist.</p>

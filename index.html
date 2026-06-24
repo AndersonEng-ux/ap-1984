@@ -82,12 +82,12 @@
 
   /* ── color ─────────────────────────────────────────────────── */
   --ap-color-ink: #111111; /* Type ink, always. Warmth lives in paper/stones/red/photography — never in type. */
-  --ap-color-graphite-neutral: #565656; /* NEUTRAL graphite #565656 — same lightness as graphite (L*≈37), zero hue. App + print data-ink, so charts stay  */
+  --ap-color-graphite: #565656; /* NEUTRAL graphite #565656 — same lightness as graphite (L*≈37), zero hue. App + print data-ink, so charts stay  */
   --ap-color-paper: #FFFFFF; /* White. App/print ground; the --ap-surface-lift 'drive home a point' exception on editorial. */
   --ap-color-warm-white: #FCFCFA; /* THE editorial ground (2026-06-15 rev2). Midpoint of paper (#FFFFFF) and cream (#F8F8F6). Ground AND cards shar */
   --ap-color-cream-print: #F9F7F2; /* Print stock simulation — proposal/doc screen preview only; pages print white. */
   --ap-color-paper-tint: #F7F6F3; /* App hover / active-nav tint. */
-  --ap-color-line-pale: #DCDCDC; /* Single app+print divider/rule hairline, neutral #DCDCDC — retuned from #EAEAEA and now the sole register value */
+  --ap-color-line: #DCDCDC; /* Single app+print divider/rule hairline, neutral #DCDCDC — retuned from #EAEAEA and now the sole register value */
   --ap-color-red: #B32A2E; /* PERMIT RED. PANTONE 484 C · CMYK 23/97/92/9. Sampled from the source logo vector 2026-06-10 (brand/logo/). Sou */
   --ap-color-red-deep: #8F2225; /* Hover/active red. */
   --ap-color-red-soft: rgba(179,42,46,0.08);
@@ -102,15 +102,14 @@
   --ap-color-data-sun: #C9A23A; /* Re-tempered San Diego Sunset (#FACC13). */
   --ap-color-data-coral: #C25C57; /* Re-tempered Wasatch Sunrise (#F04D52). */
   --ap-color-data-plum: #8C5680; /* Re-tempered Bougainvillea (#AF217F). */
-  --ap-color-control-edge: #8D8D8D; /* Form-input border #8D8D8D — clears WCAG 1.4.11 3:1 (3.23:1) on white/warm-white. Neutralized 2026-06-15 (lumin */
+  --ap-color-steel: #8D8D8D; /* Form-input border #8D8D8D — clears WCAG 1.4.11 3:1 (3.23:1) on white/warm-white. Neutralized 2026-06-15 (lumin */
   --ap-color-night-0: #1A1917; /* DARK page ground — warm charcoal, mirror of warm-white. Dark-mode primitive (consumed under [data-theme="dark" */
   --ap-color-night-1: #232120; /* DARK panel/card — one step up (separation by STEP, not shadow). */
   --ap-color-night-2: #2C2A28; /* DARK elevated — surface.lift + hover/active tint. */
   --ap-color-night-deep: #0F0E0D; /* DARK deepest block — surface.inverse (KPI ink / ⌘K). */
   --ap-color-dark-text: #F4F1EC; /* DARK-mode primary text — warm off-white #F4F1EC, 15.6:1 on dark-bg-0. Renamed from the mislabeled dark-text (r */
   --ap-color-dark-text-2: #ABA59B; /* DARK-mode secondary text #ABA59B, 7.2:1 on dark-bg. Renamed from dark-text-2. Dark namespace. */
-  --ap-color-steel-dark: #6E6A63; /* DARK decorative/large-only grey — never small/body text. */
-  --ap-color-control-edge-dark: #787268; /* DARK input border + strong rule — 3.36:1 on night-1 (WCAG 1.4.11). */
+  --ap-color-steel-dark: #787268; /* DARK input border + strong rule — 3.36:1 on night-1 (WCAG 1.4.11). */
   --ap-color-border-medium-dark: #403C37; /* DARK medium hairline / chart gridline. */
   --ap-color-border-soft-dark: #322F2C; /* DARK soft hairline. */
   --ap-color-red-light: #E2685F; /* PERMIT RED on dark — TEXT/ring/marker/error ONLY (5.3:1 on night-0, 4.9:1 on night-1). The FILL action stays c */
@@ -138,16 +137,16 @@
   --ap-text-primary: var(--ap-color-ink);
   --ap-text-body: var(--ap-color-ink);
   --ap-text-long: var(--ap-color-ink);
-  --ap-text-muted: var(--ap-color-graphite-neutral); /* Muted body/label text on light surfaces. Clearly-named alias of the neutral grey text rung (graphite-neutral)  */
-  --ap-text-secondary: var(--ap-color-graphite-neutral);
-  --ap-text-muted-large: var(--ap-color-control-edge); /* DECORATIVE / large display flourishes ONLY — steel ~3.1:1 clears large-text 3:1, but NEVER small/UI/body text  */
+  --ap-text-muted: var(--ap-color-graphite); /* Muted body/label text on light surfaces. Clearly-named alias of the neutral grey text rung (graphite-neutral)  */
+  --ap-text-secondary: var(--ap-color-graphite);
+  --ap-text-muted-large: var(--ap-color-steel); /* DECORATIVE / large display flourishes ONLY — steel ~3.1:1 clears large-text 3:1, but NEVER small/UI/body text  */
   --ap-text-inverse: #FFFFFF;
   --ap-text-inverse-muted: #C9D2DA; /* Mono meta on navy/ink shelves. */
   --ap-text-accent: var(--ap-color-red); /* The ONLY chromatic accent in content. Red text on cream is for KEY PHRASES + data emphasis, links pair w/ unde */
   --ap-border-strong: var(--ap-color-ink);
-  --ap-border-medium: var(--ap-color-control-edge);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-border-control: var(--ap-color-control-edge); /* WCAG 1.4.11 — control-edge (was control-edge 2.74:1). Claude Design v1.0.0. */
+  --ap-border-medium: var(--ap-color-steel);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-border-control: var(--ap-color-steel); /* WCAG 1.4.11 — control-edge (was control-edge 2.74:1). Claude Design v1.0.0. */
   --ap-border-navy: var(--ap-color-navy); /* Structural rules only (masthead/footer). Dial-gated. */
   --ap-accent-bg: var(--ap-color-red);
   --ap-accent-bg-hover: var(--ap-color-red-deep);
@@ -160,10 +159,10 @@
   --ap-focus-ring: var(--ap-color-red);
   --ap-focus-width: 2px;
   --ap-focus-offset: 2px;
-  --ap-chart-ink: var(--ap-color-graphite-neutral); /* DEFAULT chart color — outline bars, trend lines. One-marker rule. Editorial = graphite; app/print = neutral gr */
+  --ap-chart-ink: var(--ap-color-graphite); /* DEFAULT chart color — outline bars, trend lines. One-marker rule. Editorial = graphite; app/print = neutral gr */
   --ap-chart-axis: var(--ap-color-ink);
-  --ap-chart-gridline: var(--ap-color-line-pale);
-  --ap-chart-label: var(--ap-color-graphite-neutral);
+  --ap-chart-gridline: var(--ap-color-line);
+  --ap-chart-label: var(--ap-color-graphite);
   --ap-chart-marker: var(--ap-color-red); /* THE marker — the one figure that matters. Spend deliberately. */
   --ap-chart-reference: var(--ap-color-navy); /* Baseline/target series — dashed, calm, never competing with marker. */
   --ap-chart-cat-1: var(--ap-color-data-blue);
@@ -362,10 +361,10 @@
 [data-register="app"] {
   --ap-surface-page: var(--ap-color-paper);
   --ap-surface-panel: var(--ap-color-paper);
-  --ap-border-medium: var(--ap-color-line-pale);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-border-control: var(--ap-color-control-edge);
-  --ap-chart-ink: var(--ap-color-graphite-neutral);
+  --ap-border-medium: var(--ap-color-line);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-border-control: var(--ap-color-steel);
+  --ap-chart-ink: var(--ap-color-graphite);
   --ap-h2: 24px;
   --ap-h3: 20px;
   --ap-type-body: 15px;
@@ -374,9 +373,9 @@
 [data-register="print"] {
   --ap-surface-page: var(--ap-color-paper);
   --ap-surface-panel: var(--ap-color-paper);
-  --ap-border-medium: var(--ap-color-line-pale);
-  --ap-border-soft: var(--ap-color-line-pale);
-  --ap-chart-ink: var(--ap-color-graphite-neutral);
+  --ap-border-medium: var(--ap-color-line);
+  --ap-border-soft: var(--ap-color-line);
+  --ap-chart-ink: var(--ap-color-graphite);
   --ap-type-floor: 10px;
 }
 
@@ -417,10 +416,10 @@
   --ap-text-secondary: var(--ap-color-dark-text-2);
   --ap-text-muted-large: var(--ap-color-steel-dark);
   --ap-text-accent: var(--ap-color-red-light);
-  --ap-border-strong: var(--ap-color-control-edge-dark);
+  --ap-border-strong: var(--ap-color-steel-dark);
   --ap-border-medium: var(--ap-color-border-medium-dark);
   --ap-border-soft: var(--ap-color-border-soft-dark);
-  --ap-border-control: var(--ap-color-control-edge-dark);
+  --ap-border-control: var(--ap-color-steel-dark);
   --ap-border-navy: var(--ap-color-border-medium-dark);
   --ap-accent-soft: rgba(226,104,95,0.12);
   --ap-status-success: var(--ap-color-success-light);
@@ -440,7 +439,7 @@
   --ap-chart-cat-4: var(--ap-color-data-sun-dark);
   --ap-chart-cat-5: var(--ap-color-data-coral-dark);
   --ap-chart-cat-6: var(--ap-color-data-plum-dark);
-  --ap-tier-chrome-rule: var(--ap-color-control-edge-dark);
+  --ap-tier-chrome-rule: var(--ap-color-steel-dark);
   --ap-tier-shelf-bg: var(--ap-color-night-1);
   --ap-tier-shelf-fg: var(--ap-color-dark-text-2);
   --ap-tier-band-bg: var(--ap-color-night-1);
@@ -1133,8 +1132,8 @@ html:has(.ap-nav-sheet[open]) { overflow: hidden; } /* body scroll lock */
 /* ── ap/figbox — image slot / schematic fallback ────────────────────────── */
 .ap-figbox {
   position: relative; overflow: hidden;
-  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ap-color-graphite-neutral) 5%, transparent) 0 1px, transparent 1px 14px),
-              color-mix(in srgb, var(--ap-color-graphite-neutral) 22%, transparent);
+  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ap-color-graphite) 5%, transparent) 0 1px, transparent 1px 14px),
+              color-mix(in srgb, var(--ap-color-graphite) 22%, transparent);
   border: var(--ap-border-w1) solid var(--ap-border-medium);
 }
 .ap-figbox img { width: 100%; height: 100%; object-fit: cover; filter: var(--ap-image-treatment); }
@@ -1288,7 +1287,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-mapbox { border: var(--ap-border-w1) solid var(--ap-border-strong); background: var(--ap-surface-panel); }
 .ap-mapbox__frame { position: relative; aspect-ratio: 16 / 9; background: var(--ap-surface-page); overflow: hidden; }
 .ap-mapbox__frame iframe { width: 100%; height: 100%; border: 0; display: block; filter: var(--ap-image-treatment); }
-.ap-mapbox__placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line-pale) 7px, var(--ap-color-line-pale) 8px); }
+.ap-mapbox__placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line) 7px, var(--ap-color-line) 8px); }
 .ap-mapbox__tag { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); text-transform: uppercase; }
 .ap-mapbox__bar { display: flex; align-items: center; gap: var(--ap-space-3); padding: var(--ap-space-3) var(--ap-space-4); border-top: var(--ap-border-w1) solid var(--ap-border-strong); }
 .ap-mapbox__addr { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); letter-spacing: var(--ap-tracking-data); color: var(--ap-text-primary); }
@@ -1334,7 +1333,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 
 /* ── ap/locmap — multi-marker project-locations plate (schematic) ───────── */
 .ap-locmap { border: var(--ap-border-w1) solid var(--ap-border-strong); background: var(--ap-surface-panel); }
-.ap-locmap__frame { position: relative; aspect-ratio: 4 / 3; background: var(--ap-surface-page); overflow: hidden; background-image: repeating-linear-gradient(0deg, transparent, transparent 31px, var(--ap-color-line-pale) 31px, var(--ap-color-line-pale) 32px), repeating-linear-gradient(90deg, transparent, transparent 31px, var(--ap-color-line-pale) 31px, var(--ap-color-line-pale) 32px); }
+.ap-locmap__frame { position: relative; aspect-ratio: 4 / 3; background: var(--ap-surface-page); overflow: hidden; background-image: repeating-linear-gradient(0deg, transparent, transparent 31px, var(--ap-color-line) 31px, var(--ap-color-line) 32px), repeating-linear-gradient(90deg, transparent, transparent 31px, var(--ap-color-line) 31px, var(--ap-color-line) 32px); }
 .ap-locmap__pin { position: absolute; transform: translate(-50%, -100%); color: var(--ap-color-ink); }
 .ap-locmap__pin--accent { color: var(--ap-accent-bg); }
 .ap-locmap__pin b { position: absolute; left: 50%; top: -15px; transform: translateX(-50%); font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); color: var(--ap-text-primary); }
@@ -1371,7 +1370,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-pdf__name { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); color: var(--ap-text-primary); }
 .ap-pdf__bar .ap-lk { margin-inline-start: auto; flex: none; }
 .ap-pdf__frame { width: 100%; height: var(--pdf-height, 420px); border: 0; display: block; background: var(--ap-surface-page); }
-.ap-pdf__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); height: var(--pdf-height, 420px); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line-pale) 7px, var(--ap-color-line-pale) 8px); }
+.ap-pdf__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--ap-space-2); height: var(--pdf-height, 420px); color: var(--ap-text-secondary); background-image: repeating-linear-gradient(45deg, transparent, transparent 7px, var(--ap-color-line) 7px, var(--ap-color-line) 8px); }
 .ap-pdf__tag { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); text-transform: uppercase; }
 
 /* ── ap/datefield — input + calendar popover (mono dates) ───────────────── */
@@ -1390,7 +1389,7 @@ a.ap-project:hover .ap-figbox::after { content: ''; position: absolute; inset: 0
 .ap-cal__dow { font-family: var(--ap-font-mono); font-size: 10px; letter-spacing: var(--ap-tracking-data); text-transform: uppercase; color: var(--ap-text-secondary); text-align: center; padding: 4px 0; }
 .ap-cal__day { font-family: var(--ap-font-mono); font-size: var(--ap-fs-13); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: none; border: 0; cursor: pointer; color: var(--ap-text-primary); }
 .ap-cal__day:hover { background: var(--ap-surface-tint); }
-.ap-cal__day--muted { color: var(--ap-color-control-edge); }
+.ap-cal__day--muted { color: var(--ap-color-steel); }
 .ap-cal__day--today { box-shadow: inset 0 0 0 var(--ap-border-w1) var(--ap-border-strong); }
 .ap-cal__day--selected { background: var(--ap-color-ink); color: var(--ap-text-inverse); }
 .ap-cal__day--selected:hover { background: var(--ap-color-ink); }
@@ -1812,7 +1811,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
 .ap-progress__row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--ap-space-1); }
 .ap-progress__label { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-caps); text-transform: uppercase; color: var(--ap-text-secondary); }
 .ap-progress__val { font-family: var(--ap-font-mono); font-size: var(--ap-fs-12); letter-spacing: var(--ap-tracking-data); color: var(--ap-text-primary); font-variant-numeric: tabular-nums; }
-.ap-progress__track { height: var(--ap-space-2); background: var(--ap-color-line-pale); }
+.ap-progress__track { height: var(--ap-space-2); background: var(--ap-color-line); }
 .ap-progress__bar { height: 100%; background: var(--ap-color-ink); transition: width var(--ap-motion-base) var(--ap-motion-ease-out); }
 
 /* ── ap/steps — pipeline position (wayfinding, ink-ladder grammar) ──────── */
@@ -2176,7 +2175,7 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
    captions ≥10.5px · one figure per page. Use under [data-register="print"].
    ============================================================================ */
 
-.ap-pages { background: color-mix(in srgb, var(--ap-color-ink) 78%, var(--ap-color-graphite-neutral)); padding: var(--ap-space-8) 0; } /* screen desk */
+.ap-pages { background: color-mix(in srgb, var(--ap-color-ink) 78%, var(--ap-color-graphite)); padding: var(--ap-space-8) 0; } /* screen desk */
 .ap-page {
   width: var(--ap-print-page-w); height: var(--ap-print-page-h);
   margin: 0 auto var(--ap-space-8);
@@ -2200,12 +2199,12 @@ a.ap-ledger-row:hover, .ap-ledger-row--hover:hover { background: var(--ap-surfac
     --ap-text-primary: var(--ap-color-ink);
     --ap-text-body: var(--ap-color-ink);
     --ap-text-long: var(--ap-color-ink);
-    --ap-text-secondary: var(--ap-color-graphite-neutral);
+    --ap-text-secondary: var(--ap-color-graphite);
     --ap-text-accent: var(--ap-color-red);
     --ap-border-strong: var(--ap-color-ink);
-    --ap-border-medium: var(--ap-color-line-pale);
-    --ap-border-soft: var(--ap-color-line-pale);
-    --ap-chart-ink: var(--ap-color-graphite-neutral);
+    --ap-border-medium: var(--ap-color-line);
+    --ap-border-soft: var(--ap-color-line);
+    --ap-chart-ink: var(--ap-color-graphite);
   }
 }
 
@@ -2459,7 +2458,7 @@ code{font-family:var(--ap-font-mono);font-size:.86em;background:var(--ap-surface
 <p class="ref-lede">One token canon, retuned across three registers — editorial, app, and print. Monochrome-plus-one. Zero-radius. A rebrand is a single token edit; every surface follows.</p>
 <p class="ref-note">Generated live from the canon — every value below is the value that ships.</p>
 <div class="ref-kpis">
-  <div><div class="k">Tokens in canon</div><div class="n">242</div><div class="s">provenance per token</div></div>
+  <div><div class="k">Tokens in canon</div><div class="n">241</div><div class="s">provenance per token</div></div>
   <div><div class="k">Components</div><div class="n">50</div><div class="s">contract · states · a11y · live</div></div>
   <div><div class="k">Contrast failures</div><div class="n">0</div><div class="s">build-gated · WCAG 2.2 AA</div></div>
   <div><div class="k">Registers</div><div class="n">3</div><div class="s">editorial · app · print</div></div>
@@ -2472,9 +2471,9 @@ code{font-family:var(--ap-font-mono);font-size:.86em;background:var(--ap-surface
 <section class="ref-sec" id="color">
 <p class="ap-eyebrow">Foundations</p><h2 class="ref-h2">Color</h2>
 <p class="ref-lede">Warmth lives in the warm-white ground, the permit red, and photography — <b>never in type</b>. Ink is <code>#111111</code>, always. The grey ramp is neutral (the stones were neutralized from taupe to luminance-matched greys); navy is structure only; the six data hues are categorical-chart-only.</p>
-<h3 class="ref-h3">Ink &amp; paper</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#111111"></div><div class="m"><b>ink</b><span class="mono">#111111</span><span class="nt">Type ink, always. Warmth lives in paper/stones/red/photography — never in type.</span></div></div><div class="ref-sw"><div class="chip" style="background:#FFFFFF"></div><div class="m"><b>paper</b><span class="mono">#FFFFFF</span><span class="nt">White. App/print ground; the --ap-surface-lift 'drive home a point' exception on editorial.</span></div></div><div class="ref-sw"><div class="chip" style="background:#FCFCFA"></div><div class="m"><b>warm-white</b><span class="mono">#FCFCFA</span><span class="nt">THE editorial ground (2026-06-15 rev2). Midpoint of paper (#FFFFFF) and cream (#F8F8F6). Ground AND cards share it; pure white lifts off it for one emphasis element.</span></div></div><div class="ref-sw"><div class="chip" style="background:#F9F7F2"></div><div class="m"><b>cream-print</b><span class="mono">#F9F7F2</span><span class="nt">Print stock simulation — proposal/doc screen preview only; pages print white.</span></div></div><div class="ref-sw"><div class="chip" style="background:#F7F6F3"></div><div class="m"><b>paper-tint</b><span class="mono">#F7F6F3</span><span class="nt">App hover / active-nav tint.</span></div></div></div>
+<h3 class="ref-h3">Ink &amp; paper</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#111111"></div><div class="m"><b>ink</b><span class="mono">#111111</span><span class="nt">Type ink, always. Warmth lives in paper/stones/red/photography — never in type.</span></div></div><div class="ref-sw"><div class="chip" style="background:#565656"></div><div class="m"><b>graphite</b><span class="mono">#565656</span><span class="nt">NEUTRAL graphite #565656 — same lightness as graphite (L*≈37), zero hue. App + print data-ink, so charts stay ink-first/crisp on pure white instead of reading brown next to neutral UI greys (2026-06-16, owner-ratified).</span></div></div><div class="ref-sw"><div class="chip" style="background:#FFFFFF"></div><div class="m"><b>paper</b><span class="mono">#FFFFFF</span><span class="nt">White. App/print ground; the --ap-surface-lift 'drive home a point' exception on editorial.</span></div></div><div class="ref-sw"><div class="chip" style="background:#FCFCFA"></div><div class="m"><b>warm-white</b><span class="mono">#FCFCFA</span><span class="nt">THE editorial ground (2026-06-15 rev2). Midpoint of paper (#FFFFFF) and cream (#F8F8F6). Ground AND cards share it; pure white lifts off it for one emphasis element.</span></div></div><div class="ref-sw"><div class="chip" style="background:#F9F7F2"></div><div class="m"><b>cream-print</b><span class="mono">#F9F7F2</span><span class="nt">Print stock simulation — proposal/doc screen preview only; pages print white.</span></div></div><div class="ref-sw"><div class="chip" style="background:#F7F6F3"></div><div class="m"><b>paper-tint</b><span class="mono">#F7F6F3</span><span class="nt">App hover / active-nav tint.</span></div></div></div>
 <h3 class="ref-h3">The one red &amp; structural navy</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#B32A2E"></div><div class="m"><b>red</b><span class="mono">#B32A2E</span><span class="nt">PERMIT RED. PANTONE 484 C · CMYK 23/97/92/9. Sampled from the source logo vector 2026-06-10 (brand/logo/). Soul + action. The ONLY chromatic accent inside content.</span></div></div><div class="ref-sw"><div class="chip" style="background:#8F2225"></div><div class="m"><b>red-deep</b><span class="mono">#8F2225</span><span class="nt">Hover/active red.</span></div></div><div class="ref-sw"><div class="chip" style="background:rgba(179,42,46,0.08)"></div><div class="m"><b>red-soft</b><span class="mono">rgba(179,42,46,0.08)</span></div></div><div class="ref-sw"><div class="chip" style="background:#0C3350"></div><div class="m"><b>navy</b><span class="mono">#0C3350</span><span class="nt">PACIFIC BLUE. PANTONE 295 C. STRUCTURE ONLY — solid fields, lockup, footer shelf, masthead rule. NEVER exposed as a text-accent token (soul-check rule 2026-06-11). Lint enforces.</span></div></div><div class="ref-sw"><div class="chip" style="background:#16466B"></div><div class="m"><b>navy-2</b><span class="mono">#16466B</span><span class="nt">Navy hover/secondary structural.</span></div></div></div>
-<h3 class="ref-h3">The neutral grey ramp</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#DCDCDC"></div><div class="m"><b>line-pale</b><span class="mono">#DCDCDC</span><span class="nt">Single app+print divider/rule hairline, neutral #DCDCDC — retuned from #EAEAEA and now the sole register value for BOTH app and print dividers (line-pale-2 + rule-print archived, 1.1.0). Neutralized 2026-06-15 (luminance-matched from taupe — the ink/paper neutralization).</span></div></div><div class="ref-sw"><div class="chip" style="background:#8D8D8D"></div><div class="m"><b>control-edge</b><span class="mono">#8D8D8D</span><span class="nt">Form-input border #8D8D8D — clears WCAG 1.4.11 3:1 (3.23:1) on white/warm-white. Neutralized 2026-06-15 (luminance-matched from taupe — the ink/paper neutralization).</span></div></div></div>
+<h3 class="ref-h3">The neutral grey ramp</h3><div class="ref-swgrid"></div>
 <h3 class="ref-h3">Status semantics (app register)</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#1F6B3C"></div><div class="m"><b>success</b><span class="mono">#1F6B3C</span><span class="nt">WON green — app-calibrated, 6.4:1 on white. Replaces canon #2A6F4E (drifted).</span></div></div><div class="ref-sw"><div class="chip" style="background:#8A6200"></div><div class="m"><b>warning</b><span class="mono">#8A6200</span><span class="nt">SCOPING amber — 5.4:1 on white. REPLACES site.css #B17D1B which FAILED AA (RT-08).</span></div></div><div class="ref-sw"><div class="chip" style="background:#2F6396"></div><div class="m"><b>info</b><span class="mono">#2F6396</span></div></div></div>
 <h3 class="ref-h3">Data-viz categorical (charts only — never content)</h3><div class="ref-swgrid"><div class="ref-sw"><div class="chip" style="background:#2C6E9E"></div><div class="m"><b>data-blue</b><span class="mono">#2C6E9E</span><span class="nt">Re-tempered Psomas Blue (#00529C desaturated). Data-viz categorical only.</span></div></div><div class="ref-sw"><div class="chip" style="background:#3E8C84"></div><div class="m"><b>data-teal</b><span class="mono">#3E8C84</span><span class="nt">Re-tempered Glacier Green (#008E86).</span></div></div><div class="ref-sw"><div class="chip" style="background:#7FA653"></div><div class="m"><b>data-green</b><span class="mono">#7FA653</span><span class="nt">Re-tempered Saguaro (#94C83D).</span></div></div><div class="ref-sw"><div class="chip" style="background:#C9A23A"></div><div class="m"><b>data-sun</b><span class="mono">#C9A23A</span><span class="nt">Re-tempered San Diego Sunset (#FACC13).</span></div></div><div class="ref-sw"><div class="chip" style="background:#C25C57"></div><div class="m"><b>data-coral</b><span class="mono">#C25C57</span><span class="nt">Re-tempered Wasatch Sunrise (#F04D52).</span></div></div><div class="ref-sw"><div class="chip" style="background:#8C5680"></div><div class="m"><b>data-plum</b><span class="mono">#8C5680</span><span class="nt">Re-tempered Bougainvillea (#AF217F).</span></div></div><div class="ref-sw"><div class="chip" style="background:#4E92C4"></div><div class="m"><b>data-blue-dark</b><span class="mono">#4E92C4</span><span class="nt">DARK chart category 1.</span></div></div><div class="ref-sw"><div class="chip" style="background:#5BB0A6"></div><div class="m"><b>data-teal-dark</b><span class="mono">#5BB0A6</span><span class="nt">DARK chart category 2.</span></div></div><div class="ref-sw"><div class="chip" style="background:#9DC270"></div><div class="m"><b>data-green-dark</b><span class="mono">#9DC270</span><span class="nt">DARK chart category 3.</span></div></div><div class="ref-sw"><div class="chip" style="background:#DBB24E"></div><div class="m"><b>data-sun-dark</b><span class="mono">#DBB24E</span><span class="nt">DARK chart category 4.</span></div></div><div class="ref-sw"><div class="chip" style="background:#D87B73"></div><div class="m"><b>data-coral-dark</b><span class="mono">#D87B73</span><span class="nt">DARK chart category 5.</span></div></div><div class="ref-sw"><div class="chip" style="background:#B07CA1"></div><div class="m"><b>data-plum-dark</b><span class="mono">#B07CA1</span><span class="nt">DARK chart category 6.</span></div></div></div>
 <div class="ref-howto"><div class="mono lbl">How to use</div><p>Reach for <b>semantic</b> tokens, never the raw ramp: <code>var(--ap-text-primary)</code> for type, <code>var(--ap-surface-page)</code> for grounds, <code>var(--ap-border-soft)</code> for hairlines. The raw <code>--ap-color-*</code> values exist so the semantic layer can chain to them — components consume the semantic layer and touch raw color zero times.</p>
